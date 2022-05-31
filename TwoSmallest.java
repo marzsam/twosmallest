@@ -47,10 +47,13 @@ public class TwoSmallest{
         }
         return vOut;
     }
+	
+	
 
     public static void main(String args[]){
         int[] vIn = {3, 1, 7, 5, 0, 4, 9, 6, 8, -5};
         int[] vOut = twoSmallest(vIn);
+		lont int t0;
         System.out.print("< ");
         for (int n : vOut){
             System.out.print(n+" ");
