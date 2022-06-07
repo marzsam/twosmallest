@@ -30,14 +30,13 @@ public class TwoSmallest{
             v2[i] = v[i+l/2];
         }
 
-        int[] vOut = merge(twoSmallest(v1), twoSmallest(v2));
-        return vOut;
+        return merge(twoSmallest(v1), twoSmallest(v2));
     }
 
     public static int[] merge(int[] v1, int[] v2){
         int i = 0;
         int j = 0;
-        int vOut[] = new int[2];
+        int[] vOut = new int[2];
         int k = 0;
         while(k<2){
             if(v1[i]<v2[j])
@@ -48,7 +47,7 @@ public class TwoSmallest{
         return vOut;
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         int[] vIn = {3, 1, 7, 5, 0, 4, 9, 6, 8, -5};
         int[] vOut = twoSmallest(vIn);
         System.out.print("< ");
